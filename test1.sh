@@ -1,11 +1,11 @@
 #!/bin/bash
 
-dt=0.02
-v0=0.1
-iseed=66
-natom=4096
-phi=0.45
-step=110000
+dt=0.1
+v0=0.5
+iseed=91
+natom=2
+box=1.2e1
+step=2000
 
 run=/data1/dingxu/active_shear/normal/build/test
 cd $run
@@ -16,7 +16,7 @@ $dt
 $v0
 $iseed
 $natom
-$phi
+$box
 $step
 
 EOF

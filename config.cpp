@@ -22,16 +22,16 @@ void gen_rand_con(int iseed){
     }
 
     //calculate box's length
-    double sdisk = 0.0;
-    for(int i=0; i<sys.natom; i++)
-        sdisk += PI * atom[i].r * atom[i].r;
-    double volsquare = sdisk / sys.phi;
-    double temp = sqrt(volsquare);
-    box.x = temp;
-    box.y = temp;
-//    box.z = temp;
-    box.xinv = 1.0 / temp;
-    box.yinv = 1.0 / temp;
+//    double sdisk = 0.0;
+//    for(int i=0; i<sys.natom; i++)
+//        sdisk += PI * atom[i].r * atom[i].r;
+//    double volsquare = sdisk / sys.phi;
+//    double temp = sqrt(volsquare);
+//    box.x = temp;
+//    box.y = temp;
+////    box.z = temp;
+//    box.xinv = 1.0 / temp;
+//    box.yinv = 1.0 / temp;
 //    box.zinv = 1.0 / temp;
 
     //initiate randomly atom's position
